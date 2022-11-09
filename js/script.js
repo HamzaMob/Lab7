@@ -1,12 +1,11 @@
-function init(){
-//add your javascrip between these two lines of code
-function nameAlert(){
-  var text = document.getElementById('entryinput').value;
-  var h2result = document.getElementById('textoutput');
-  h2result.innerHTML = text;
-  alert("Muhammad Hamza Mobeen: "+text);
+function init() {
+  //add your javascript between these two lines of code
+  function alertFunction() {
+    var input = document.getElementById('entryinput').value;
+	document.getElementById('textoutput').innerHTML = input;
+	alert('Muhammad Hamza Mobeen: ' + input);
   }
-  var divButton = document.getElementById('entrybutton');
-  divButton.addEventListener('click',nameAlert);
-} 
+  var button = document.getElementById('entrybutton');
+  button.addEventListener('click', alertFunction);
+}
 window.addEventListener('load', init);
